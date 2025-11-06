@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>Weekly NBA Excitement Dashboard</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; background:#0c1116; color:#e3f2fd; margin:0; padding:0; }
+    header { padding: 28px 34px 22px; background: linear-gradient(135deg,#1a237e,#0d47a1 40%,#26a69a); box-shadow:0 12px 32px rgba(13,71,161,0.35); }
+    header h1 { margin:0; font-size: 30px; font-weight:700; color:#fff; letter-spacing:0.4px; }
+    header p { margin:10px 0 0; color:#bbdefb; max-width:720px; line-height:1.45; }
+    main { padding: 28px 34px 56px; }
+    section { margin-bottom: 52px; }
+    section h2 { font-size:24px; margin:0 0 18px; color:#80deea; letter-spacing:0.3px; }
+    .grid { display:grid; gap:26px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+    .card { background:#121a21; border-radius:16px; border:1px solid rgba(128,222,234,0.18); overflow:hidden; box-shadow:0 12px 32px rgba(0,0,0,0.45); display:flex; flex-direction:column; }
+    .card header { padding:20px 22px 18px; border-bottom:1px solid rgba(128,222,234,0.12); background:linear-gradient(135deg,rgba(38,166,154,0.18),rgba(13,71,161,0.18)); }
+    .card header h3 { margin:0; font-size:19px; color:#fff; letter-spacing:0.2px; }
+    .card header p { margin:6px 0 0; color:#b0bec5; font-size:14px; letter-spacing:0.4px; text-transform:uppercase; }
+    .meter { margin:22px 22px 0; height:18px; background:#0f1419; border-radius:999px; position:relative; overflow:hidden; border:1px solid rgba(128,222,234,0.35); box-shadow: inset 0 0 12px rgba(0,0,0,0.45); }
+    .meter .fill { display:block; height:100%; border-radius:999px; background:linear-gradient(90deg,#ef5350,#ffa726,#ffee58,#66bb6a,#26a69a); box-shadow:0 0 20px rgba(102,187,106,0.45); transition:width 0.6s ease; }
+    .meter-label { margin:12px 22px 0; font-size:13px; letter-spacing:0.6px; color:#e0f2f1; text-transform:uppercase; }
+    .card footer { padding:14px 22px 20px; color:#cfd8dc; font-size:13px; background:#10161c; border-top:1px solid rgba(128,222,234,0.12); }
+    .metrics { margin:10px 0 0; display:flex; flex-wrap:wrap; gap:12px; font-size:12px; letter-spacing:0.8px; text-transform:uppercase; }
+    .chip { background:rgba(12,97,109,0.45); padding:7px 12px; border-radius:999px; border:1px solid rgba(128,222,234,0.28); color:#80deea; }
+    .chip strong { color:#e1f5fe; margin-left:4px; font-size:12px; }
+    .note { margin-top: 10px; font-size:12px; color:#90a4ae; letter-spacing:0.3px; }
+    @media (max-width: 720px) { main { padding: 20px 18px 48px; } header { padding: 24px 18px 20px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Weekly NBA Excitement Dashboard</h1>
+    <p>Each card shows how wild the win-probability swings were without revealing final scores. The excitement bar is scaled 0–10, with colors shifting from calm (left) to chaos (right).</p>
+  </header>
+  <main>
+    <section>
+      <h2>2025-11-01</h2>
+      <div class='grid'>
+        <article class='card'>
+          <header>
+            <h3>1. Minnesota Timberwolves at Charlotte Hornets</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.51/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.51 out of 10'>
+            <span class='fill' style='width:75.1%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.51/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>22</strong></span>
+              <span class='chip'>Biggest swing<strong>0.428</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>2. Dallas Mavericks at Detroit Pistons</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.51/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.51 out of 10'>
+            <span class='fill' style='width:75.1%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.51/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>34</strong></span>
+              <span class='chip'>Biggest swing<strong>0.141</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>3. Golden State Warriors at Indiana Pacers</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.33/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.33 out of 10'>
+            <span class='fill' style='width:73.3%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.33/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>13</strong></span>
+              <span class='chip'>Biggest swing<strong>0.225</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>4. Sacramento Kings at Milwaukee Bucks</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.06/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.06 out of 10'>
+            <span class='fill' style='width:70.6%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.06/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>3</strong></span>
+              <span class='chip'>Biggest swing<strong>0.173</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>5. Orlando Magic at Washington Wizards</h3>
+            <p>Skip it &nbsp;&bull;&nbsp; 1.35/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 1.35 out of 10'>
+            <span class='fill' style='width:13.5%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 1.35/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>0</strong></span>
+              <span class='chip'>Biggest swing<strong>0.061</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>6. Houston Rockets at Boston Celtics</h3>
+            <p>Skip it &nbsp;&bull;&nbsp; 1.10/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 1.10 out of 10'>
+            <span class='fill' style='width:11.0%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 1.10/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>0</strong></span>
+              <span class='chip'>Biggest swing<strong>0.051</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <section>
+      <h2>2025-10-31</h2>
+      <div class='grid'>
+        <article class='card'>
+          <header>
+            <h3>1. Boston Celtics at Philadelphia 76ers</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.48/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.48 out of 10'>
+            <span class='fill' style='width:74.8%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.48/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>15</strong></span>
+              <span class='chip'>Biggest swing<strong>0.459</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>2. Denver Nuggets at Portland Trail Blazers</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.41/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.41 out of 10'>
+            <span class='fill' style='width:74.1%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.41/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>11</strong></span>
+              <span class='chip'>Biggest swing<strong>0.443</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>3. New Orleans Pelicans at LA Clippers</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 6.94/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 6.94 out of 10'>
+            <span class='fill' style='width:69.4%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 6.94/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>4</strong></span>
+              <span class='chip'>Biggest swing<strong>0.440</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>4. New York Knicks at Chicago Bulls</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 6.83/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 6.83 out of 10'>
+            <span class='fill' style='width:68.3%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 6.83/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>3</strong></span>
+              <span class='chip'>Biggest swing<strong>0.178</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>5. Toronto Raptors at Cleveland Cavaliers</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 6.69/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 6.69 out of 10'>
+            <span class='fill' style='width:66.9%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 6.69/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>11</strong></span>
+              <span class='chip'>Biggest swing<strong>0.128</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>6. Los Angeles Lakers at Memphis Grizzlies</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 6.57/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 6.57 out of 10'>
+            <span class='fill' style='width:65.7%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 6.57/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>28</strong></span>
+              <span class='chip'>Biggest swing<strong>0.107</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>7. Atlanta Hawks at Indiana Pacers</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 6.52/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 6.52 out of 10'>
+            <span class='fill' style='width:65.2%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 6.52/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>8</strong></span>
+              <span class='chip'>Biggest swing<strong>0.182</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>8. Utah Jazz at Phoenix Suns</h3>
+            <p>Skip it &nbsp;&bull;&nbsp; 1.51/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 1.51 out of 10'>
+            <span class='fill' style='width:15.1%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 1.51/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>0</strong></span>
+              <span class='chip'>Biggest swing<strong>0.071</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <section>
+      <h2>2025-10-30</h2>
+      <div class='grid'>
+        <article class='card'>
+          <header>
+            <h3>1. Golden State Warriors at Milwaukee Bucks</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.66/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.66 out of 10'>
+            <span class='fill' style='width:76.6%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.66/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>21</strong></span>
+              <span class='chip'>Biggest swing<strong>0.146</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>2. Miami Heat at San Antonio Spurs</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.01/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.01 out of 10'>
+            <span class='fill' style='width:70.1%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.01/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>20</strong></span>
+              <span class='chip'>Biggest swing<strong>0.143</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>3. Orlando Magic at Charlotte Hornets</h3>
+            <p>Skip it &nbsp;&bull;&nbsp; 1.87/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 1.87 out of 10'>
+            <span class='fill' style='width:18.7%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 1.87/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>0</strong></span>
+              <span class='chip'>Biggest swing<strong>0.077</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>4. Washington Wizards at Oklahoma City Thunder</h3>
+            <p>Skip it &nbsp;&bull;&nbsp; 1.17/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 1.17 out of 10'>
+            <span class='fill' style='width:11.7%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 1.17/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>0</strong></span>
+              <span class='chip'>Biggest swing<strong>0.057</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <section>
+      <h2>2025-10-29</h2>
+      <div class='grid'>
+        <article class='card'>
+          <header>
+            <h3>1. Memphis Grizzlies at Phoenix Suns</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 8.77/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 8.77 out of 10'>
+            <span class='fill' style='width:87.7%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 8.77/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>34</strong></span>
+              <span class='chip'>Biggest swing<strong>0.456</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>2. Indiana Pacers at Dallas Mavericks</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.61/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.61 out of 10'>
+            <span class='fill' style='width:76.1%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.61/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>18</strong></span>
+              <span class='chip'>Biggest swing<strong>0.244</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>3. Cleveland Cavaliers at Boston Celtics</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.50/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.50 out of 10'>
+            <span class='fill' style='width:75.0%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.50/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>19</strong></span>
+              <span class='chip'>Biggest swing<strong>0.471</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>4. Orlando Magic at Detroit Pistons</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.14/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.14 out of 10'>
+            <span class='fill' style='width:71.4%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.14/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>6</strong></span>
+              <span class='chip'>Biggest swing<strong>0.410</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>5. Portland Trail Blazers at Utah Jazz</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.12/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.12 out of 10'>
+            <span class='fill' style='width:71.2%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.12/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>26</strong></span>
+              <span class='chip'>Biggest swing<strong>0.513</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>6. Los Angeles Lakers at Minnesota Timberwolves</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 6.90/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 6.90 out of 10'>
+            <span class='fill' style='width:69.0%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 6.90/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>11</strong></span>
+              <span class='chip'>Biggest swing<strong>0.647</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>7. Atlanta Hawks at Brooklyn Nets</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 6.73/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 6.73 out of 10'>
+            <span class='fill' style='width:67.3%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 6.73/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>8</strong></span>
+              <span class='chip'>Biggest swing<strong>0.230</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>8. Sacramento Kings at Chicago Bulls</h3>
+            <p>Worth a look &nbsp;&bull;&nbsp; 5.87/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 5.87 out of 10'>
+            <span class='fill' style='width:58.7%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 5.87/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>4</strong></span>
+              <span class='chip'>Biggest swing<strong>0.121</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>9. Houston Rockets at Toronto Raptors</h3>
+            <p>Worth a look &nbsp;&bull;&nbsp; 4.99/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 4.99 out of 10'>
+            <span class='fill' style='width:49.9%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 4.99/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>6</strong></span>
+              <span class='chip'>Biggest swing<strong>0.065</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>10. New Orleans Pelicans at Denver Nuggets</h3>
+            <p>Skip it &nbsp;&bull;&nbsp; 2.63/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 2.63 out of 10'>
+            <span class='fill' style='width:26.3%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 2.63/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>0</strong></span>
+              <span class='chip'>Biggest swing<strong>0.168</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <section>
+      <h2>2025-10-28</h2>
+      <div class='grid'>
+        <article class='card'>
+          <header>
+            <h3>1. New York Knicks at Milwaukee Bucks</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 8.25/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 8.25 out of 10'>
+            <span class='fill' style='width:82.5%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 8.25/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>23</strong></span>
+              <span class='chip'>Biggest swing<strong>0.614</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>2. Sacramento Kings at Oklahoma City Thunder</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 8.22/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 8.22 out of 10'>
+            <span class='fill' style='width:82.2%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 8.22/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>38</strong></span>
+              <span class='chip'>Biggest swing<strong>0.253</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>3. Philadelphia 76ers at Washington Wizards</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.54/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.54 out of 10'>
+            <span class='fill' style='width:75.4%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.54/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>22</strong></span>
+              <span class='chip'>Biggest swing<strong>0.212</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>4. Charlotte Hornets at Miami Heat</h3>
+            <p>Worth a look &nbsp;&bull;&nbsp; 5.71/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 5.71 out of 10'>
+            <span class='fill' style='width:57.1%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 5.71/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>2</strong></span>
+              <span class='chip'>Biggest swing<strong>0.312</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>5. LA Clippers at Golden State Warriors</h3>
+            <p>Worth a look &nbsp;&bull;&nbsp; 5.52/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 5.52 out of 10'>
+            <span class='fill' style='width:55.2%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 5.52/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>2</strong></span>
+              <span class='chip'>Biggest swing<strong>0.168</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <section>
+      <h2>2025-10-27</h2>
+      <div class='grid'>
+        <article class='card'>
+          <header>
+            <h3>1. Phoenix Suns at Utah Jazz</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.55/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.55 out of 10'>
+            <span class='fill' style='width:75.5%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.55/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>14</strong></span>
+              <span class='chip'>Biggest swing<strong>0.454</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>2. Atlanta Hawks at Chicago Bulls</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.21/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.21 out of 10'>
+            <span class='fill' style='width:72.1%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.21/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>15</strong></span>
+              <span class='chip'>Biggest swing<strong>0.165</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>3. Orlando Magic at Philadelphia 76ers</h3>
+            <p>Worth a look &nbsp;&bull;&nbsp; 6.47/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 6.47 out of 10'>
+            <span class='fill' style='width:64.7%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 6.47/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>7</strong></span>
+              <span class='chip'>Biggest swing<strong>0.135</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>4. Cleveland Cavaliers at Detroit Pistons</h3>
+            <p>Worth a look &nbsp;&bull;&nbsp; 6.44/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 6.44 out of 10'>
+            <span class='fill' style='width:64.4%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 6.44/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>8</strong></span>
+              <span class='chip'>Biggest swing<strong>0.258</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>5. Portland Trail Blazers at Los Angeles Lakers</h3>
+            <p>Worth a look &nbsp;&bull;&nbsp; 6.19/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 6.19 out of 10'>
+            <span class='fill' style='width:61.9%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 6.19/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>24</strong></span>
+              <span class='chip'>Biggest swing<strong>0.085</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>6. Denver Nuggets at Minnesota Timberwolves</h3>
+            <p>Worth a look &nbsp;&bull;&nbsp; 5.84/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 5.84 out of 10'>
+            <span class='fill' style='width:58.4%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 5.84/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>8</strong></span>
+              <span class='chip'>Biggest swing<strong>0.109</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>7. Memphis Grizzlies at Golden State Warriors</h3>
+            <p>Worth a look &nbsp;&bull;&nbsp; 5.30/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 5.30 out of 10'>
+            <span class='fill' style='width:53.0%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 5.30/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>6</strong></span>
+              <span class='chip'>Biggest swing<strong>0.087</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>8. Oklahoma City Thunder at Dallas Mavericks</h3>
+            <p>Skip it &nbsp;&bull;&nbsp; 2.96/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 2.96 out of 10'>
+            <span class='fill' style='width:29.6%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 2.96/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>0</strong></span>
+              <span class='chip'>Biggest swing<strong>0.157</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>9. Boston Celtics at New Orleans Pelicans</h3>
+            <p>Skip it &nbsp;&bull;&nbsp; 1.91/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 1.91 out of 10'>
+            <span class='fill' style='width:19.1%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 1.91/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>0</strong></span>
+              <span class='chip'>Biggest swing<strong>0.073</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>10. Toronto Raptors at San Antonio Spurs</h3>
+            <p>Skip it &nbsp;&bull;&nbsp; 1.02/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 1.02 out of 10'>
+            <span class='fill' style='width:10.2%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 1.02/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>0</strong></span>
+              <span class='chip'>Biggest swing<strong>0.041</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>11. Brooklyn Nets at Houston Rockets</h3>
+            <p>Skip it &nbsp;&bull;&nbsp; 0.65/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 0.65 out of 10'>
+            <span class='fill' style='width:6.5%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 0.65/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>0</strong></span>
+              <span class='chip'>Biggest swing<strong>0.032</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <section>
+      <h2>2025-10-26</h2>
+      <div class='grid'>
+        <article class='card'>
+          <header>
+            <h3>1. Los Angeles Lakers at Sacramento Kings</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 8.26/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 8.26 out of 10'>
+            <span class='fill' style='width:82.6%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 8.26/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>31</strong></span>
+              <span class='chip'>Biggest swing<strong>0.297</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>2. Charlotte Hornets at Washington Wizards</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.50/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.50 out of 10'>
+            <span class='fill' style='width:75.0%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.50/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>27</strong></span>
+              <span class='chip'>Biggest swing<strong>0.243</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>3. Indiana Pacers at Minnesota Timberwolves</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.17/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.17 out of 10'>
+            <span class='fill' style='width:71.7%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.17/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>8</strong></span>
+              <span class='chip'>Biggest swing<strong>0.361</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>4. New York Knicks at Miami Heat</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.08/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.08 out of 10'>
+            <span class='fill' style='width:70.8%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.08/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>37</strong></span>
+              <span class='chip'>Biggest swing<strong>0.103</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>5. Portland Trail Blazers at LA Clippers</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 7.01/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 7.01 out of 10'>
+            <span class='fill' style='width:70.1%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 7.01/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>10</strong></span>
+              <span class='chip'>Biggest swing<strong>0.171</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>6. Boston Celtics at Detroit Pistons</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 6.67/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 6.67 out of 10'>
+            <span class='fill' style='width:66.7%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 6.67/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>10</strong></span>
+              <span class='chip'>Biggest swing<strong>0.147</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>7. Toronto Raptors at Dallas Mavericks</h3>
+            <p>Exciting &nbsp;&bull;&nbsp; 6.50/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 6.50 out of 10'>
+            <span class='fill' style='width:65.0%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 6.50/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>53</strong></span>
+              <span class='chip'>Biggest swing<strong>0.090</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>8. Brooklyn Nets at San Antonio Spurs</h3>
+            <p>Worth a look &nbsp;&bull;&nbsp; 6.18/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 6.18 out of 10'>
+            <span class='fill' style='width:61.8%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 6.18/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>4</strong></span>
+              <span class='chip'>Biggest swing<strong>0.153</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+        <article class='card'>
+          <header>
+            <h3>9. Milwaukee Bucks at Cleveland Cavaliers</h3>
+            <p>Skip it &nbsp;&bull;&nbsp; 3.72/10 excitement</p>
+          </header>
+          <div class='meter' role='img' aria-label='Excitement 3.72 out of 10'>
+            <span class='fill' style='width:37.2%;'></span>
+          </div>
+          <p class='meter-label'>Intensity meter: 3.72/10</p>
+          <footer>
+            <div class='metrics'>
+              <span class='chip'>Lead changes<strong>0</strong></span>
+              <span class='chip'>Biggest swing<strong>0.188</strong></span>
+            </div>
+            <p class='note'>Higher bars mean more volatile finish-time drama.</p>
+          </footer>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

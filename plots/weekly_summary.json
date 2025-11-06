@@ -1,0 +1,546 @@
+{
+  "2025-11-01": [
+    {
+      "date": "2025-11-01",
+      "matchup": "Minnesota Timberwolves at Charlotte Hornets",
+      "score": 7.509038348507202,
+      "score_percent": 0.7509038348507202,
+      "verdict": "Exciting",
+      "lead_changes": 22,
+      "max_swing": 0.42800000000000005,
+      "image": null
+    },
+    {
+      "date": "2025-11-01",
+      "matchup": "Dallas Mavericks at Detroit Pistons",
+      "score": 7.507447754557581,
+      "score_percent": 0.7507447754557581,
+      "verdict": "Exciting",
+      "lead_changes": 34,
+      "max_swing": 0.14100000000000001,
+      "image": null
+    },
+    {
+      "date": "2025-11-01",
+      "matchup": "Golden State Warriors at Indiana Pacers",
+      "score": 7.325382776932714,
+      "score_percent": 0.7325382776932714,
+      "verdict": "Exciting",
+      "lead_changes": 13,
+      "max_swing": 0.22499999999999998,
+      "image": null
+    },
+    {
+      "date": "2025-11-01",
+      "matchup": "Sacramento Kings at Milwaukee Bucks",
+      "score": 7.06244556625297,
+      "score_percent": 0.7062445566252971,
+      "verdict": "Exciting",
+      "lead_changes": 3,
+      "max_swing": 0.173,
+      "image": null
+    },
+    {
+      "date": "2025-11-01",
+      "matchup": "Orlando Magic at Washington Wizards",
+      "score": 1.34820474281897,
+      "score_percent": 0.134820474281897,
+      "verdict": "Skip it",
+      "lead_changes": 0,
+      "max_swing": 0.061,
+      "image": null
+    },
+    {
+      "date": "2025-11-01",
+      "matchup": "Houston Rockets at Boston Celtics",
+      "score": 1.100042517006802,
+      "score_percent": 0.1100042517006802,
+      "verdict": "Skip it",
+      "lead_changes": 0,
+      "max_swing": 0.05100000000000002,
+      "image": null
+    }
+  ],
+  "2025-10-31": [
+    {
+      "date": "2025-10-31",
+      "matchup": "Boston Celtics at Philadelphia 76ers",
+      "score": 7.476309085828602,
+      "score_percent": 0.7476309085828602,
+      "verdict": "Exciting",
+      "lead_changes": 15,
+      "max_swing": 0.459,
+      "image": null
+    },
+    {
+      "date": "2025-10-31",
+      "matchup": "Denver Nuggets at Portland Trail Blazers",
+      "score": 7.412431251039227,
+      "score_percent": 0.7412431251039228,
+      "verdict": "Exciting",
+      "lead_changes": 11,
+      "max_swing": 0.44299999999999995,
+      "image": null
+    },
+    {
+      "date": "2025-10-31",
+      "matchup": "New Orleans Pelicans at LA Clippers",
+      "score": 6.939374605575693,
+      "score_percent": 0.6939374605575692,
+      "verdict": "Exciting",
+      "lead_changes": 4,
+      "max_swing": 0.43999999999999995,
+      "image": null
+    },
+    {
+      "date": "2025-10-31",
+      "matchup": "New York Knicks at Chicago Bulls",
+      "score": 6.8333048347748955,
+      "score_percent": 0.6833304834774896,
+      "verdict": "Exciting",
+      "lead_changes": 3,
+      "max_swing": 0.178,
+      "image": null
+    },
+    {
+      "date": "2025-10-31",
+      "matchup": "Toronto Raptors at Cleveland Cavaliers",
+      "score": 6.689454568751444,
+      "score_percent": 0.6689454568751444,
+      "verdict": "Exciting",
+      "lead_changes": 11,
+      "max_swing": 0.128,
+      "image": null
+    },
+    {
+      "date": "2025-10-31",
+      "matchup": "Los Angeles Lakers at Memphis Grizzlies",
+      "score": 6.570455882565258,
+      "score_percent": 0.6570455882565258,
+      "verdict": "Exciting",
+      "lead_changes": 28,
+      "max_swing": 0.10700000000000004,
+      "image": null
+    },
+    {
+      "date": "2025-10-31",
+      "matchup": "Atlanta Hawks at Indiana Pacers",
+      "score": 6.517897912589693,
+      "score_percent": 0.6517897912589693,
+      "verdict": "Exciting",
+      "lead_changes": 8,
+      "max_swing": 0.18200000000000005,
+      "image": null
+    },
+    {
+      "date": "2025-10-31",
+      "matchup": "Utah Jazz at Phoenix Suns",
+      "score": 1.5147458942322798,
+      "score_percent": 0.15147458942322797,
+      "verdict": "Skip it",
+      "lead_changes": 0,
+      "max_swing": 0.07099999999999995,
+      "image": null
+    }
+  ],
+  "2025-10-30": [
+    {
+      "date": "2025-10-30",
+      "matchup": "Golden State Warriors at Milwaukee Bucks",
+      "score": 7.66162216317818,
+      "score_percent": 0.766162216317818,
+      "verdict": "Exciting",
+      "lead_changes": 21,
+      "max_swing": 0.14600000000000002,
+      "image": null
+    },
+    {
+      "date": "2025-10-30",
+      "matchup": "Miami Heat at San Antonio Spurs",
+      "score": 7.014978279575348,
+      "score_percent": 0.7014978279575348,
+      "verdict": "Exciting",
+      "lead_changes": 20,
+      "max_swing": 0.14300000000000002,
+      "image": null
+    },
+    {
+      "date": "2025-10-30",
+      "matchup": "Orlando Magic at Charlotte Hornets",
+      "score": 1.8673648792151374,
+      "score_percent": 0.18673648792151373,
+      "verdict": "Skip it",
+      "lead_changes": 0,
+      "max_swing": 0.07699999999999999,
+      "image": null
+    },
+    {
+      "date": "2025-10-30",
+      "matchup": "Washington Wizards at Oklahoma City Thunder",
+      "score": 1.1738831615120264,
+      "score_percent": 0.11738831615120264,
+      "verdict": "Skip it",
+      "lead_changes": 0,
+      "max_swing": 0.05699999999999994,
+      "image": null
+    }
+  ],
+  "2025-10-29": [
+    {
+      "date": "2025-10-29",
+      "matchup": "Memphis Grizzlies at Phoenix Suns",
+      "score": 8.770076888528662,
+      "score_percent": 0.8770076888528662,
+      "verdict": "Exciting",
+      "lead_changes": 34,
+      "max_swing": 0.456,
+      "image": null
+    },
+    {
+      "date": "2025-10-29",
+      "matchup": "Indiana Pacers at Dallas Mavericks",
+      "score": 7.610240748268829,
+      "score_percent": 0.761024074826883,
+      "verdict": "Exciting",
+      "lead_changes": 18,
+      "max_swing": 0.24399999999999994,
+      "image": null
+    },
+    {
+      "date": "2025-10-29",
+      "matchup": "Cleveland Cavaliers at Boston Celtics",
+      "score": 7.495088400539657,
+      "score_percent": 0.7495088400539658,
+      "verdict": "Exciting",
+      "lead_changes": 19,
+      "max_swing": 0.47100000000000003,
+      "image": null
+    },
+    {
+      "date": "2025-10-29",
+      "matchup": "Orlando Magic at Detroit Pistons",
+      "score": 7.135421030719196,
+      "score_percent": 0.7135421030719196,
+      "verdict": "Exciting",
+      "lead_changes": 6,
+      "max_swing": 0.41,
+      "image": null
+    },
+    {
+      "date": "2025-10-29",
+      "matchup": "Portland Trail Blazers at Utah Jazz",
+      "score": 7.124908572201838,
+      "score_percent": 0.7124908572201838,
+      "verdict": "Exciting",
+      "lead_changes": 26,
+      "max_swing": 0.513,
+      "image": null
+    },
+    {
+      "date": "2025-10-29",
+      "matchup": "Los Angeles Lakers at Minnesota Timberwolves",
+      "score": 6.897088198194041,
+      "score_percent": 0.6897088198194041,
+      "verdict": "Exciting",
+      "lead_changes": 11,
+      "max_swing": 0.6469999999999999,
+      "image": null
+    },
+    {
+      "date": "2025-10-29",
+      "matchup": "Atlanta Hawks at Brooklyn Nets",
+      "score": 6.7324984762684315,
+      "score_percent": 0.6732498476268431,
+      "verdict": "Exciting",
+      "lead_changes": 8,
+      "max_swing": 0.23000000000000004,
+      "image": null
+    },
+    {
+      "date": "2025-10-29",
+      "matchup": "Sacramento Kings at Chicago Bulls",
+      "score": 5.867774390243905,
+      "score_percent": 0.5867774390243905,
+      "verdict": "Worth a look",
+      "lead_changes": 4,
+      "max_swing": 0.121,
+      "image": null
+    },
+    {
+      "date": "2025-10-29",
+      "matchup": "Houston Rockets at Toronto Raptors",
+      "score": 4.992337750089553,
+      "score_percent": 0.4992337750089553,
+      "verdict": "Worth a look",
+      "lead_changes": 6,
+      "max_swing": 0.06500000000000006,
+      "image": null
+    },
+    {
+      "date": "2025-10-29",
+      "matchup": "New Orleans Pelicans at Denver Nuggets",
+      "score": 2.6346774193548392,
+      "score_percent": 0.26346774193548395,
+      "verdict": "Skip it",
+      "lead_changes": 0,
+      "max_swing": 0.16800000000000004,
+      "image": null
+    }
+  ],
+  "2025-10-28": [
+    {
+      "date": "2025-10-28",
+      "matchup": "New York Knicks at Milwaukee Bucks",
+      "score": 8.246748363579188,
+      "score_percent": 0.8246748363579188,
+      "verdict": "Exciting",
+      "lead_changes": 23,
+      "max_swing": 0.614,
+      "image": null
+    },
+    {
+      "date": "2025-10-28",
+      "matchup": "Sacramento Kings at Oklahoma City Thunder",
+      "score": 8.221707091018926,
+      "score_percent": 0.8221707091018926,
+      "verdict": "Exciting",
+      "lead_changes": 38,
+      "max_swing": 0.253,
+      "image": null
+    },
+    {
+      "date": "2025-10-28",
+      "matchup": "Philadelphia 76ers at Washington Wizards",
+      "score": 7.541921013765351,
+      "score_percent": 0.7541921013765351,
+      "verdict": "Exciting",
+      "lead_changes": 22,
+      "max_swing": 0.21199999999999997,
+      "image": null
+    },
+    {
+      "date": "2025-10-28",
+      "matchup": "Charlotte Hornets at Miami Heat",
+      "score": 5.70578655377716,
+      "score_percent": 0.570578655377716,
+      "verdict": "Worth a look",
+      "lead_changes": 2,
+      "max_swing": 0.31200000000000006,
+      "image": null
+    },
+    {
+      "date": "2025-10-28",
+      "matchup": "LA Clippers at Golden State Warriors",
+      "score": 5.520659336847948,
+      "score_percent": 0.5520659336847948,
+      "verdict": "Worth a look",
+      "lead_changes": 2,
+      "max_swing": 0.16800000000000004,
+      "image": null
+    }
+  ],
+  "2025-10-27": [
+    {
+      "date": "2025-10-27",
+      "matchup": "Phoenix Suns at Utah Jazz",
+      "score": 7.553805302119183,
+      "score_percent": 0.7553805302119183,
+      "verdict": "Exciting",
+      "lead_changes": 14,
+      "max_swing": 0.454,
+      "image": null
+    },
+    {
+      "date": "2025-10-27",
+      "matchup": "Atlanta Hawks at Chicago Bulls",
+      "score": 7.213561487650639,
+      "score_percent": 0.7213561487650639,
+      "verdict": "Exciting",
+      "lead_changes": 15,
+      "max_swing": 0.16500000000000004,
+      "image": null
+    },
+    {
+      "date": "2025-10-27",
+      "matchup": "Orlando Magic at Philadelphia 76ers",
+      "score": 6.474774679519662,
+      "score_percent": 0.6474774679519661,
+      "verdict": "Worth a look",
+      "lead_changes": 7,
+      "max_swing": 0.1349999999999999,
+      "image": null
+    },
+    {
+      "date": "2025-10-27",
+      "matchup": "Cleveland Cavaliers at Detroit Pistons",
+      "score": 6.435884068176073,
+      "score_percent": 0.6435884068176073,
+      "verdict": "Worth a look",
+      "lead_changes": 8,
+      "max_swing": 0.258,
+      "image": null
+    },
+    {
+      "date": "2025-10-27",
+      "matchup": "Portland Trail Blazers at Los Angeles Lakers",
+      "score": 6.191765525542122,
+      "score_percent": 0.6191765525542122,
+      "verdict": "Worth a look",
+      "lead_changes": 24,
+      "max_swing": 0.08500000000000002,
+      "image": null
+    },
+    {
+      "date": "2025-10-27",
+      "matchup": "Denver Nuggets at Minnesota Timberwolves",
+      "score": 5.840507571367634,
+      "score_percent": 0.5840507571367634,
+      "verdict": "Worth a look",
+      "lead_changes": 8,
+      "max_swing": 0.10899999999999999,
+      "image": null
+    },
+    {
+      "date": "2025-10-27",
+      "matchup": "Memphis Grizzlies at Golden State Warriors",
+      "score": 5.303398511652329,
+      "score_percent": 0.5303398511652329,
+      "verdict": "Worth a look",
+      "lead_changes": 6,
+      "max_swing": 0.08699999999999997,
+      "image": null
+    },
+    {
+      "date": "2025-10-27",
+      "matchup": "Oklahoma City Thunder at Dallas Mavericks",
+      "score": 2.958857442348007,
+      "score_percent": 0.29588574423480074,
+      "verdict": "Skip it",
+      "lead_changes": 0,
+      "max_swing": 0.157,
+      "image": null
+    },
+    {
+      "date": "2025-10-27",
+      "matchup": "Boston Celtics at New Orleans Pelicans",
+      "score": 1.9090542195502107,
+      "score_percent": 0.19090542195502108,
+      "verdict": "Skip it",
+      "lead_changes": 0,
+      "max_swing": 0.07300000000000001,
+      "image": null
+    },
+    {
+      "date": "2025-10-27",
+      "matchup": "Toronto Raptors at San Antonio Spurs",
+      "score": 1.0191197691197678,
+      "score_percent": 0.10191197691197677,
+      "verdict": "Skip it",
+      "lead_changes": 0,
+      "max_swing": 0.040999999999999925,
+      "image": null
+    },
+    {
+      "date": "2025-10-27",
+      "matchup": "Brooklyn Nets at Houston Rockets",
+      "score": 0.6546474358974358,
+      "score_percent": 0.06546474358974358,
+      "verdict": "Skip it",
+      "lead_changes": 0,
+      "max_swing": 0.03200000000000003,
+      "image": null
+    }
+  ],
+  "2025-10-26": [
+    {
+      "date": "2025-10-26",
+      "matchup": "Los Angeles Lakers at Sacramento Kings",
+      "score": 8.259023341260896,
+      "score_percent": 0.8259023341260896,
+      "verdict": "Exciting",
+      "lead_changes": 31,
+      "max_swing": 0.297,
+      "image": null
+    },
+    {
+      "date": "2025-10-26",
+      "matchup": "Charlotte Hornets at Washington Wizards",
+      "score": 7.501406059054629,
+      "score_percent": 0.7501406059054629,
+      "verdict": "Exciting",
+      "lead_changes": 27,
+      "max_swing": 0.24300000000000005,
+      "image": null
+    },
+    {
+      "date": "2025-10-26",
+      "matchup": "Indiana Pacers at Minnesota Timberwolves",
+      "score": 7.170921480566994,
+      "score_percent": 0.7170921480566994,
+      "verdict": "Exciting",
+      "lead_changes": 8,
+      "max_swing": 0.361,
+      "image": null
+    },
+    {
+      "date": "2025-10-26",
+      "matchup": "New York Knicks at Miami Heat",
+      "score": 7.08038125826713,
+      "score_percent": 0.708038125826713,
+      "verdict": "Exciting",
+      "lead_changes": 37,
+      "max_swing": 0.10299999999999998,
+      "image": null
+    },
+    {
+      "date": "2025-10-26",
+      "matchup": "Portland Trail Blazers at LA Clippers",
+      "score": 7.006323177019135,
+      "score_percent": 0.7006323177019136,
+      "verdict": "Exciting",
+      "lead_changes": 10,
+      "max_swing": 0.17099999999999999,
+      "image": null
+    },
+    {
+      "date": "2025-10-26",
+      "matchup": "Boston Celtics at Detroit Pistons",
+      "score": 6.666578402663842,
+      "score_percent": 0.6666578402663842,
+      "verdict": "Exciting",
+      "lead_changes": 10,
+      "max_swing": 0.14700000000000002,
+      "image": null
+    },
+    {
+      "date": "2025-10-26",
+      "matchup": "Toronto Raptors at Dallas Mavericks",
+      "score": 6.503999035136221,
+      "score_percent": 0.6503999035136221,
+      "verdict": "Exciting",
+      "lead_changes": 53,
+      "max_swing": 0.09000000000000002,
+      "image": null
+    },
+    {
+      "date": "2025-10-26",
+      "matchup": "Brooklyn Nets at San Antonio Spurs",
+      "score": 6.180056577752996,
+      "score_percent": 0.6180056577752996,
+      "verdict": "Worth a look",
+      "lead_changes": 4,
+      "max_swing": 0.15299999999999997,
+      "image": null
+    },
+    {
+      "date": "2025-10-26",
+      "matchup": "Milwaukee Bucks at Cleveland Cavaliers",
+      "score": 3.7175403107484035,
+      "score_percent": 0.37175403107484034,
+      "verdict": "Skip it",
+      "lead_changes": 0,
+      "max_swing": 0.18800000000000006,
+      "image": null
+    }
+  ]
+}
